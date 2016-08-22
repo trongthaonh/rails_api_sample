@@ -1,4 +1,4 @@
-Rails-API/React Sample
+Rails-API/React&Redux Sample
 ==========
 
 ## Usage
