@@ -1,0 +1,11 @@
+---
+"$schema": http://json-schema.org/draft-04/hyper-schema
+title: API
+description: API lets you interact with service
+id: schemata
+type:
+- object
+links:
+- href: https://api.hello.com
+  rel: self
+title: API
