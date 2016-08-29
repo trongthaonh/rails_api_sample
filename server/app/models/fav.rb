@@ -16,7 +16,7 @@
 #  updated_at        :datetime         not null
 #
 
-class Fav < ActiveRecord::Base
+class Fav < ApplicationRecord
   validates :collectionId, presence: true, length: { maximum: 10 }, uniqueness: true
   validates :albumId, length: { maximum: 10 }
   validates :artistId, presence: true, length: { maximum: 10 }
