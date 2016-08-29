@@ -1,5 +1,5 @@
-Rail-API
-==========
+# Rail-API
+
 
 ## Usage
 
@@ -10,7 +10,7 @@ $ gem install bundler
 Bundle install
 
 ```
-bundle install --path vendor/bundle
+$ bundle install --path vendor/bundle
 ```
 
 DB migrate
@@ -22,13 +22,13 @@ $ bin/rake db:migrate
 Start Server
 
 ```
-bin/rails s
+$ bin/rails s
 ```
 
 
 ## favs
 
-お気に入り管理用REST API
+favs REST API
 
 ### GET
 

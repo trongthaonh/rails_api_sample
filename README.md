@@ -1,5 +1,10 @@
-Rails-API/React&Redux Sample
-==========
+# Rails REST API + client(React&Redux) Sample
+
+
+## Overview
+
+Sample SPA for Rails REST API.
+
 
 ## Usage
 
@@ -23,8 +28,8 @@ bin/rake db:migrate
 # Directory
 
 ```
-client/...        - クライントサイドフォルダ
-server/...        - サーバサイドフォルダ
+client/...
+server/...
 README.md
 ```
 
@@ -72,46 +77,46 @@ app/
   │	   └─fav.rb
   └─selializers/
       └─fav_serializer.rb
-bin/...                     - 各種コマンド
-config/                     - Rails設定ファイル
+bin/...
+config/
   ├─enviroments/...
   ├─initializers/...
   ├─locales/...
-  ├─database.yml            - データベースの設定ファイル
+  ├─database.yml
   ├─enviroment.rb
-  ├─routes.rb               - Routesの設定ファイル
+  ├─routes.rb
   └─secrets.yml
-db/                         - DB管理ディレクトリ
+db/
   ├─migrate
-  │	  └─2...create_favs.rb  - マイグレートのSchemaテンプレート
-  ├─schema.rb               - Scheema定義ファイル
+  │	  └─2...create_favs.rb
+  ├─schema.rb
   └─seeds.rb
-docs/                       - APIドキュメントディレクトリ
+docs/
   └─schema/
 	  ├─schemata/
-	  │	   └─fav.yml          - favのSchema
+	  │	   └─fav.yml
 	  ├─meta.yml
- 	  ├─schema.json           - JSON Hyper-Schema
-	  └─schema.md             - APIドキュメント
-lib/...                     - ライブラリディレクトリ（使わない）
+ 	  ├─schema.json
+	  └─schema.md
+lib/...
 log/...
-public/...                  - 公開ファイル
-spec/                       - テストコードディレクトリ
+public/...
+spec/
   ├─controllers/...
   ├─factories/...
   ├─models/...
   ├─requests/...
-  │	  └─favs_spec.rb        - favs APIテストコード
+  │	  └─favs_spec.rb
   ├─routing/...
   ├─support/
-  │	  └─factory_girl.rb     - factory_girlの設定ファイル
-  ├─example.txt             - テストlogファイル
-  ├─rails_helper.rb         - RailsのSpecの設定ファイル
-  └─spec_helper.rb          - Specの設定ファイル
-temp/                       - 一時ファイルディレクトリ（使わない）
+  │	  └─factory_girl.rb
+  ├─example.txt
+  ├─rails_helper.rb
+  └─spec_helper.rb
+temp/
 config.ru
-Gemfile                     - Gemの管理ファイル
-Gemfile.lock                - Gemの管理ファイル
-Rakefile                    - Rakeのタスク定義（使わない）
+Gemfile
+Gemfile.lock
+Rakefile
 README.md
 ```

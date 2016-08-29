@@ -1,17 +1,38 @@
-# Gulp Redux React Template
+# Gulp Redux React Sample
+
+
+## Overview
+
+sample SPA by Redux + React.  
+
+- Redux + React with Gulp
+- webpack for CommonJS
+- Babel for ES6
+- UnitTest by Mocha, Power-Assert、Sinon
+
+
+## Usage
 
 ```
 $ npm install
 ```
 
-## 概要
+watch and server  
 
-- gulpとReactを使ったJSアプリケーション開発環境。  
-- webpackを用いたCommonJS環境。
-- Babelを用いたES6での開発環境。
-- Mocha, Power-Assert、Sinonを用いたユニットテスト。
+```
+# default watch (assets/pc)
+$ gulp
 
-※Babelを使用する場合はES5ベースになるので、IE9以上のモダンブラウザのみ対応。
+# watch for sp（assets/sp)
+$ gulp -sp
+```
+
+distribution  
+
+```
+$ gulp dist
+```
+
 
 
 ## HTML
@@ -28,7 +49,7 @@ scripts/
       └─index.ejs
 ```
 
-dist後
+dist
 
 ```javascript
 index.html
@@ -49,13 +70,14 @@ styl/
   └─samplePage/...
 ```
 
-dist時に各ページ一枚のcommon.cssにまとめます。
+dist
 
 ```javascript
 css/
   ├─index/index.css
   └─home/index.css
 ```
+
 
 ## JSX
 
@@ -75,13 +97,14 @@ scripts/
   └─home.jsx
 ```
 
-dist後
+dist
 
 ```javascript
 js/
   ├─index.js
   └─home.js
 ```
+
 
 ## IMG
 
@@ -95,32 +118,17 @@ img/
 _imgSprites/...
 ```
 
-dist後
+dist
 
 ```javascript
 img/
-  └─common/sprites.png // spritesはcommon内に一枚だけ作成します
+  └─common/sprites.png
     ├─top/...
     └─user/...
 ```
 
-### ファイル監視の実行 & サーバー起動
 
-```
-# ディレクトリを監視(assets/pc)
-$ gulp
-
-# 指定ディレクトリを監視（assets/spディレクトリを監視する例)
-$ gulp -sp
-```
-
-### リリースファイル作成
-
-```
-$ gulp dist
-```
-
-### 個別タスク
+### Tasks
 
 ```
 $ gulp clean
@@ -133,7 +141,8 @@ $ gulp sprite
 $ gulp style
 ```
 
-### 使用ツール
+
+### Tools
 
 - [Redux](https://github.com/reactjs/redux)
 - [React](https://facebook.github.io/react/)
