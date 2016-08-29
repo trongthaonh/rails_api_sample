@@ -1,0 +1,187 @@
+{
+  "$schema": "http://json-schema.org/draft-04/hyper-schema",
+  "type": [
+    "object"
+  ],
+  "definitions": {
+    "fav": {
+      "title": "Fav",
+      "description": "Fav API",
+      "stability": "prototype",
+      "strictProperties": true,
+      "definitions": {
+        "id": {
+          "description": "unique identifier of fav",
+          "example": "120954021",
+          "readOnly": true,
+          "type": [
+            "integer"
+          ]
+        },
+        "albumId": {
+          "description": "unique identifier of album",
+          "example": "120954021",
+          "type": [
+            "string"
+          ]
+        },
+        "collectionId": {
+          "description": "unique identifier of collection",
+          "example": "120954021",
+          "type": [
+            "string"
+          ]
+        },
+        "artistId": {
+          "description": "identifier of artist",
+          "example": "909253",
+          "type": [
+            "string"
+          ]
+        },
+        "artistName": {
+          "description": "Artist Name of fav",
+          "example": "Jack Johnson",
+          "type": [
+            "string"
+          ]
+        },
+        "collectionName": {
+          "description": "Collection Name of fav",
+          "example": "Sing-a-Longs and Lullabies for the Film Curious George",
+          "type": [
+            "string"
+          ]
+        },
+        "collectionViewUrl": {
+          "description": "iTunes URL of fav",
+          "example": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=120954025&id=120954021&s=143441",
+          "type": [
+            "string"
+          ]
+        },
+        "artworkUrl400": {
+          "description": "400*400 Artwork URL of fav",
+          "example": "http://a1.itunes.apple.com/r10/Music/3b/6a/33/mzi.qzdqwsel.400x400-75.jpg",
+          "type": [
+            "string"
+          ]
+        },
+        "releaseDate": {
+          "description": "Release Date of fav",
+          "example": "2013-01-02T08:00:00Z",
+          "type": [
+            "string"
+          ]
+        },
+        "primaryGenreName": {
+          "description": "Primary Genre Name of fav",
+          "example": "Rock",
+          "type": [
+            "string"
+          ]
+        },
+        "identity": {
+          "$ref": "#/definitions/fav/definitions/id"
+        }
+      },
+      "links": [
+        {
+          "description": "List existing favs.",
+          "href": "/api/favs",
+          "method": "GET",
+          "rel": "instances",
+          "title": "List"
+        },
+        {
+          "description": "Info for existing fav.",
+          "href": "/api/favs/{(%23%2Fdefinitions%2Ffav%2Fdefinitions%2Fidentity)}",
+          "method": "GET",
+          "rel": "self",
+          "title": "Info"
+        },
+        {
+          "description": "Create a new fav.",
+          "href": "/api/favs",
+          "method": "POST",
+          "rel": "create",
+          "schema": {
+            "properties": {
+            },
+            "type": [
+              "object"
+            ]
+          },
+          "title": "Create"
+        },
+        {
+          "description": "Delete an existing fav.",
+          "href": "/api/favs/{(%23%2Fdefinitions%2Ffav%2Fdefinitions%2Fidentity)}",
+          "method": "DELETE",
+          "rel": "destroy",
+          "title": "Delete"
+        },
+        {
+          "description": "Update an existing fav.",
+          "href": "/api/favs/{(%23%2Fdefinitions%2Ffav%2Fdefinitions%2Fidentity)}",
+          "method": "PATCH",
+          "rel": "update",
+          "schema": {
+            "properties": {
+            },
+            "type": [
+              "object"
+            ]
+          },
+          "title": "Update"
+        }
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/fav/definitions/id"
+        },
+        "albumId": {
+          "$ref": "#/definitions/fav/definitions/albumId"
+        },
+        "collectionId": {
+          "$ref": "#/definitions/fav/definitions/collectionId"
+        },
+        "artistId": {
+          "$ref": "#/definitions/fav/definitions/artistId"
+        },
+        "artistName": {
+          "$ref": "#/definitions/fav/definitions/artistName"
+        },
+        "collectionName": {
+          "$ref": "#/definitions/fav/definitions/collectionName"
+        },
+        "collectionViewUrl": {
+          "$ref": "#/definitions/fav/definitions/collectionViewUrl"
+        },
+        "artworkUrl400": {
+          "$ref": "#/definitions/fav/definitions/artworkUrl400"
+        },
+        "releaseDate": {
+          "$ref": "#/definitions/fav/definitions/releaseDate"
+        },
+        "primaryGenreName": {
+          "$ref": "#/definitions/fav/definitions/primaryGenreName"
+        }
+      }
+    }
+  },
+  "properties": {
+    "fav": {
+      "$ref": "#/definitions/fav"
+    }
+  },
+  "title": "API",
+  "description": "API lets you interact with service",
+  "id": "schemata",
+  "links": [
+    {
+      "href": "https://api.hello.com",
+      "rel": "self"
+    }
+  ]
+}
