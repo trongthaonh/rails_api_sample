@@ -19,7 +19,13 @@ DB migrate
 $ bin/rake db:migrate
 ```
 
-Start Server
+Rspec  
+
+```
+$ bin/rspec
+```
+
+Start Server  
 
 ```
 $ bin/rails s

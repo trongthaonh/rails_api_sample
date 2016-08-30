@@ -6,7 +6,7 @@ module Api
     # GET /api/favs.json
     def index
       @favs = Fav.all
-      favs_list = ActiveModel::ArraySerializer.new(@favs, each_serializer: FavSerializer)
+      favs_list = ActiveModel::Serializer::CollectionSerializer.new(@favs, each_serializer: FavSerializer)
       res = { list: favs_list }
       render json: res
     end
