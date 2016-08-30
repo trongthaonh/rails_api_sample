@@ -19,6 +19,12 @@ DB migrate
 $ bin/rake db:migrate
 ```
 
+Create API Schema
+
+```
+bundle exec prmd combine --meta docs/schema/meta.yml docs/schema/schemata/ > docs/schema/schema.json
+```
+
 Rspec  
 
 ```

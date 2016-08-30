@@ -21,7 +21,7 @@ module Server
 
     config.autoload_paths += %W(#{config.root}/lib)
     if ENV['RAILS_ENV'] == 'test'
-      system('bundle exec prmd combine --meta docs/schema/meta.yml docs/schema/schemata/ > docs/schema/schema.json')
+      # system('bundle exec prmd combine --meta docs/schema/meta.yml docs/schema/schemata/ > docs/schema/schema.json')
       str = File.read("#{Rails.root}/docs/schema/schema.json")
       schema = JSON.parse(str)
 
