@@ -5,9 +5,9 @@ gem 'sqlite3'
 gem 'rails-i18n'
 gem 'puma', '~> 3.0'
 # gem 'redis', '~> 3.0'
-# gem 'sdoc', '~> 0.4.0', group: :doc
+# gem 'capistrano-rails', group: :development
 
-# for API
+# API Schema
 gem 'prmd'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'rack-json_schema'
@@ -18,24 +18,33 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'devise'
 
+# Frontend
+# gem 'sass-rails', '~> 5.0'
+# gem 'uglifier', '>= 1.3.0'
+# gem 'coffee-rails', '~> 4.2'
+# gem 'jquery-rails'
+# gem 'jquery-turbolinks'
+# gem 'masonry-rails'
+# gem 'lodash-rails'
+# gem 'font-awesome-rails'
+# gem 'turbolinks', '~> 5'
+# gem 'jbuilder', '~> 2.5'
+# gem 'gon'
+# gem 'therubyracer', platforms: :ruby
+
 # gem 'carrierwave'
 # gem 'rmagick', require: false
 # gem 'exception_notification'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 group :development, :test do
   gem 'byebug'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'simplecov', require: false
   gem 'spring-commands-rspec'
-  # gem 'guard-rspec', require: false
-  gem 'factory_girl_rails'
-  gem 'database_cleaner'
   # gem 'dotenv-rails'
+  # gem 'guard-rspec', require: false
 end
 
 group :development do
@@ -43,9 +52,9 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'bullet'
   gem 'better_errors'
   gem 'binding_of_caller'
+  # gem 'bullet'
   # gem 'pry-rails'
   # gem 'pry-byebug'
   # gem 'awesome_print'
